@@ -6,20 +6,29 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#header {
+.top-container {
+  background: linear-gradient(#f1f1f1, #1abc9c);
+  color: black;
+  opacity: 0.85;
+  padding: 30px;
+  text-align: center;
+ }
+
+.header {
 	background-color: #1abc9c;
-	height: 150px;
-	line-height: 150px;
+	opacity: 0.85;
+	height: 80px;
+	line-height: 80px;
 }
 
-#header a {
+.header a {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
 
-#header a:hover {
+.header a:hover {
 	color: #222;
 }
 
@@ -118,4 +127,19 @@ p {
 
 .post-container:nth-child(even) {
 	background-color: #eee;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 82px;
 }

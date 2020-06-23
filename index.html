@@ -5,7 +5,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div id="header">
+	<div class="top-container">
+  		<h1 class="uppercase">How I got started</h1>
+  		<p>A blog about challenges in becoming a web developer.</p>
+	</div>
+	<div class="header"; id="myHeader">
 		<div class="container">
 			<a id="header-title" href="index.html">My Blog</a>
 			<ul id="header-nav">
@@ -14,7 +18,7 @@
 			</ul>
 		</div>
 	</div>
-	<div id="content">
+	<div class="content">
 		<div class="post-container">
 			<div class="post">
 				<div class="post-author">
@@ -63,5 +67,24 @@
 
 		</div>
 	</div>
+<script>
+	// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 </body>
 </html>
