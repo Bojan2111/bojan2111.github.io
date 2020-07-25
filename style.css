@@ -1,27 +1,43 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
+	background-color: #c9d9db;
 	color: #555;
 	margin: 0;
+	height: 105%;
 	font-family: 'Montserrat', sans-serif;
 }
 
 .top-container {
-  background: linear-gradient(#f1f1f1, #1abc9c);
-  color: black;
+  background-color: #333;
   opacity: 0.85;
-  padding: 30px;
+  padding: 0 0 1px 0;
   text-align: center;
  }
 
+.top-container h1 {
+	color: red;
+	text-shadow: 4px 4px 3px #000;
+	font-size: 3.5vw;
+}
+
+.top-container p {
+	color: white;
+	text-shadow: 4px 4px 3px #000;
+	font-size: 2.5vw;
+}
+
 .header {
+	background: linear-gradient(#2659da, #332458);
 	background-color: #1abc9c;
-	opacity: 0.85;
-	height: 80px;
-	line-height: 80px;
+	border-radius: 0 0 6vw 6vw;
+	height: 6vw;
+	line-height: 6vw;
+	box-shadow: 10px 10px 8px rgba(100, 100, 100, 0.7);
 }
 
 .header a {
+	font-size: 1.2vw;
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -35,38 +51,53 @@ body {
 #header-title {
 	display: block;
 	float: left;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 2vw;
+	font-weight: bolder;
+	padding-left: 5vw;
 }
 
 #header-nav {
 	display: block;
 	float: right;
 	margin-top: 0;
+	padding-right: 5vw;
 }
 
 #header-nav li {
 	display: inline;
-	padding-left: 20px;
+	padding-right: 1.2vw;
+}
+
+.pageTitle {
+	margin-top: 3vw;
+	padding: 1vw 0 1vw 0;
+	text-align: center;
+	box-shadow: 0 0 1vw rgba(80, 80, 80, 0.7);
 }
 
 .container {
-	max-width: 1000px;
+	max-width: 100vw;
 	margin: 0 auto;
+}
+
+.container img {
+	height: 5vw;
 }
 
 #footer {
 	background-color: #2f2f2f;
-	padding: 50px 0;
+	height: 12vw;
+	padding: 3vw 0;
+	box-shadow: 0 0 1vw #000;
 }
 
 .column {
-	min-width: 300px;
-	display: inline-block;
-	vertical-align: top;
+	padding-left: 3.8vw;
+	
 }
 
 #footer h4 {
+	font-size: 1.3vw;
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -74,15 +105,78 @@ body {
 
 #footer p {
 	color: white;
+	font-size: 1vw;
 }
 
 a {
 	color: #1abc9c;
 	text-decoration: none;
+	vertical-align: middle;
+	padding-left: 0.5vw;
 }
 
 a:hover {
 	color: #f6a623;
+}
+
+.content {
+	height: 100%;
+}
+
+.content p {
+	font-size: 1.2vw;
+	text-align: justify;
+}
+
+.content ol {
+	font-size: 1.2vw;
+}
+
+.content ul {
+	font-size: 1.2vw;
+}
+
+.content li {
+	font-size: 1.2vw;
+}
+
+.content h2 {
+	font-size: 2vw;
+}
+
+.content h1 {
+	font-size: 2.4vw;
+}
+
+.leftSide {
+	width: 60%;
+	float:left;
+	
+	background: none;
+	margin-top: 0.8vw;
+	padding: 0.4vw 0.4vw 0.4vw 6.5%;
+}
+
+.rightSide {
+	width: 25%;
+	float:left;
+	
+	background: #c9d9db;
+	margin-top: 0.8vw;
+	border-left: 3px groove #fff;
+	padding: 0.4vw 6.5% 0.4vw 0.4vw;
+}
+
+.content img {
+	border: solid 1px gray;
+	padding: 0.15vw;
+	margin: 0.4vw;
+	background-color: white;
+	width: 25vw;
+}
+
+.content p, h1, h2 {
+	margin: 10px;
 }
 
 .post, .about {
@@ -91,22 +185,21 @@ a:hover {
 	padding: 60px 0;
 }
 
-.post-author img {
-	width: 50px;
-	height: 50px;
+.copyright {
+	position: relative;
+	width: 100%;
+	height: 8vw;
+}
+
+.copyright img {
+	height: 4vw;
 	vertical-align: middle;
+	margin-right: 16px;
 }
 
-.post-author span {
-	margin-left: 16px;
-}
-
-.post-date {
-	color: #d2d2d2;
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
+.copyright span {
+	color: #333;
+	text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -115,18 +208,6 @@ h1, h2, h3, h4 {
 
 p {
 	line-height: 1.5;
-}
-
-.about {
-	text-align: center;
-}
-
-.post-author img, .about-author img {
-	border-radius: 50%;
-}
-
-.post-container:nth-child(even) {
-	background-color: #eee;
 }
 
 .uppercase {
@@ -142,4 +223,59 @@ p {
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 82px;
+}
+
+.bg-modal {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-content {
+	width: 500px;
+	height: 300px;
+	background-color: white;
+	border-radius: 4px;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+}
+
+.button {
+	background-color: blue;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*input {
+	width: 50%;
+	display: block;
+	margin: 15px auto;
+}*/
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 14px;
+	font-size: 42px;
+	transform: rotate(45deg);
+	cursor: pointer;
+}
+
+br {
+	font-size: 1.2vw;
+}
+
+.imageBox {
+	height: 12vw;
+	margin-bottom: 2vw;
+	padding-top: 1vw;
 }

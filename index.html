@@ -1,90 +1,104 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-	<title>My blog</title>
+	<title>Uva Tea by Euroherbal Tea</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel='shortcut icon' type='image/x-icon' href='img/favicon.png'>
+	<style type="text/css">
+		#parallax {
+ 		/* The image used */
+		background-image: url("img/home.jpg");
+
+		/* Full height */
+		height: 80%;
+
+		/* Create the parallax scrolling effect */
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: contain;
+		}
+	</style>
 </head>
 <body>
-	<div class="top-container">
-  		<h1 class="uppercase">How I got started</h1>
-  		<p>A blog about challenges in becoming a web developer.</p>
+	<div class="top-container" id="parallax" style="font-family: Times New Roman;">
+		<div style="position: relative;	width: 100%; height: 38vw;">
+			<div style="position: absolute; top: 30%; margin-left: 12%">
+				<h1 class="uppercase">Euroherbal Tea</h1><br><br>
+				<p class="uppercase"><strong>Bringing you the highest quality Uva Tea from Europe</strong></p>
+			</div>
+		</div>
 	</div>
 	<div class="header"; id="myHeader">
 		<div class="container">
-			<a id="header-title" href="index.html">My Blog</a>
+			<a id="header-title" href="index.html">Euroherbal Tea</a>
+			<a href="index.html"><img src="img/a-00.png" style="margin: 0.2vw 0.4vw 0.2vw 3.2vw; border-radius: 60%;"></a>
 			<ul id="header-nav">
-				<li><a href="about.html">About</a></li>
-				<li><a href="mailto:bojan.adzic@gmail.com">Contact</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="product.html">Our Product</a></li>
+				<li><a href="testimonials.html">Testimonials</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
 		</div>
 	</div>
 	<div class="content">
-		<div class="post-container">
-			<div class="post">
-				<div class="post-author">
-					<img src="aurora.jpg">
-					<span>Aurora</span>
-				</div>
-				<p class="post-date">Today</p>
-				<h3 class="post-title">I'm so glad my daddy can play with me</h3>
-				<div class="post-content">
-					<p>When my daddy started to learn coding and web development, I couldn't have known what does it mean. He was away during the night and early morning to work hard, so he had to sleep until noon. After that, he would type on his computer and could barely have time to play with me.</p>
-					<p>I remember he was so happy when he got his first job as a web developer. He took me out for an ice cream and we played in the park for hours. He could finally stay at home and play with me and my little brother. I still don't know what is that that he does, but I love it, because he is always there for me.</p>
-				</div>
-			</div>
+		<div class="pageTitle"><h1>Welcome To Euroherbal Tea</h1></div>
+		<div class="leftSide">
+			<img src="img/00.jpg" style="float: left;">
+			<p>UVA Tea is a unique organic herbal medicinal product, desirable in every house, useful for all ages and genders, highly effective with wide effects on general health.</p>
+			<p>Product description and instructions are based on writings published by the experts in the field of medicine, the clinical study of European Medicine Agency – science medicines health. Our product is registered as medicine and authorized in the European Union.</p>
+			<p><strong>Source:</strong> <em>The Clinical study of European Medicine Agency – Science Medicines Health, the European Commission.</em></p>
+			<h3>NEW - Total Price Calculator</h3>
+			<p>Try out our Price Calculator and compare the prices based on the desired quantity. <a href="priceCalc.html">Click here</a></p>
+		</div>
+		<div class="rightSide">
+			<img src="img/01.jpg">
+			<img src="img/02.jpg">
+			<!--a id="button" class="button">Show</a-->
 		</div>
 		<div class="post-container">
 			<div class="post">
-				<div class="post-author">
-					<img src="logo.jpg">
-					<span>Bojan</span>
-				</div>
-				<p class="post-date">Today</p>
-				<h3 class="post-title">Becoming a web developer</h3>
-				<div class="post-content">
-					<p>If somebody would have told me a week ago that I would be able to make a website, I would not have believed them.</p>
-					<p>Just a few days later, I came across Mimo and started to work on a real blog.</p>
+				<div>
+					<span style="color: #c9d9db">_</span>
 				</div>
 			</div>
 		</div>
+		
 	</div>
 
 	<div id="footer">
 		<div class="container">
 
-			<div class="column">
-				<h4>My Links</h4>
+			<div class="column" style="float: left; height: 20vw; width: 20%; padding-left: 2vw">
+				<h4>Follow us on:</h4>
 				<p>
-					<a href="#">Facebook</a><br>
-					<a href="#">Twitter</a>
+					<a href="https://www.facebook.com/euroherbal/"><img src="img/Facebook.jpg" style="height: 2vw; border-radius: 0.2vw;"></a>
+					<a href="https://www.facebook.com/euroherbal/" style="font-size: 1vw">Facebook</a>
 				</p>
 			</div>
 
-			<div class="column">
-				<h4>My Story</h4>
-				<p>Hi there! I am an aspiring web developer<br>and software and coding enthusiast.<br>Learning, implementing and improving. Always.</p>
+			<div class="column" style="float: right; height: 12vw; width: 60%; padding-left: 2vw">
+				<h4>Taking care of your health and needs</h4>
+				<p>In these hard times we are working even harder to deliver the best quality Uva Tea to your home.</p>
+				<p>If you have any questions regarding your symptoms, disease or delivery, please contact us on Facebook. We'd love to hear from you!</p>
 			</div>
-
+		</div>
+		
+	</div>
+	<div class="copyright">    
+    	<div style="position: absolute; bottom: 5px; margin: 1vw 0 1vw 38%">
+    		<img src="img/a-00.png" style="float: left;">
+			<span style="font-size: 1.5vw;">Copyright © 2020 by <b class="uppercase" style="color: red;">Euroherbal Tea</b><br><em style="font-size: 0.8vw;"><strong>Webmaster:</strong> Bojan Adzic</em></span>
 		</div>
 	</div>
-<script>
-	// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-</script>
+	<!--div class="bg-modal">
+		<div class="modal-content">
+			<div class="close">+</div>
+			<img src="img/a-00.png">
+			<h3>Important Notice</h3>
+			<p>Due to the COVID-19 pandemics our delivery may be limited, but we're working even harder to deliver our product to your home as fast as possible. Thanks to our partnership with LBC post service, we're accepting Cash On Delivery (COD). For further details, please contact us on our <a href="">Facebook page</a></p>
+		</div>
+	</div-->
+<script src="script.js"></script>
 </body>
 </html>
