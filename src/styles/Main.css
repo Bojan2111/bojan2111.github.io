@@ -1,0 +1,33 @@
+.main {
+  background: lightblue;
+  display: grid;
+  grid-template-columns: 65% 30%;
+}
+
+.main-section {
+  background: lightblue;
+}
+
+.breadcrumbs {
+  background: lightblue;
+}
+
+.main-title {
+  background: lightblue;
+}
+
+.side-panel {
+  background: lightblue;
+}
+
+.side-panel-menu {
+  background: lightblue;
+}
+
+.side-panel-menu-group {
+  background: lightblue;
+}
+
+.side-panel-menu-items {
+  background: lightblue;
+}

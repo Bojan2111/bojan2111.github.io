@@ -1,0 +1,22 @@
+.navbar {
+  display: flex;
+}
+
+#hamburger-button {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamb-lines {
+  line-height: 5px;
+}
+
+.nav-group {
+  display: flex;
+}
+
+.nav-item {
+  background-color: aqua;
+  cursor: pointer;
+}

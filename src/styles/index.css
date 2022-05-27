@@ -2,6 +2,11 @@
 @import '../styles/Header.css';
 @import '../styles/Navbar.css';
 @import '../styles/Main.css';
+@import '../styles/Footer.css';
+
+:root {
+  --main-bkg: #abcce6;
+}
 
 body {
   margin: 0;

@@ -1,0 +1,22 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title-logo {
+  height: 80px;
+}
+
+.title {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  font-size: 24px;
+  margin-left: 1%;
+}

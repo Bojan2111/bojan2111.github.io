@@ -1,0 +1,21 @@
+footer {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-gap: 1%;
+}
+
+.footer-links-group {
+  background: #555;
+}
+
+.footer-links-items {
+  background: #555;
+}
+
+.footer-social-group {
+  background: #555;
+}
+
+.footer-social-items {
+  background: #555;
+}
